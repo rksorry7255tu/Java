@@ -4,8 +4,8 @@ import java.util.List;
 public class switch1 {
   public static void main(String[] args) {
     ArrayList<Double> list = new ArrayList<>();
-    list.add(2.0);
-    list.add(2.0);
+    list.add(5.00);
+    list.add(10.0);
     double result = switchCase(2, list);
     System.out.println(result);
   }
@@ -24,6 +24,8 @@ public class switch1 {
           result = arr.get(0) * arr.get(1);
         }
         break;
+      default:
+        System.out.println("invalid inputs");
     }
     return result;
   }
